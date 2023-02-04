@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dark Mode</title>
+    <!-- link do bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- link do css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer serve para carregarmos o script depois do html, já que irei trabalhar com DOM -->
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
-    <h1>Teste</h1>
+
+    <header>
+        <h2>light and dark</h2>
+
+        <div>
+            <input type="checkbox" name="change-theme" id="chenge-theme">
+            <!-- curiosidade: a label usarei para conseguir clicar e ativar o light e dark mode -->
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <!-- card com a imagem do produto -->
+            <div class="card-image">
+                <span>Nike</span>
+                <img src="img/tenis.png" alt="Tênis da Nike">
+            </div>
+            <!-- fim do card-image -->
+
+            <!-- card com as informações do produto -->
+            <div class="card-datails">
+                <h2>Tênis Nike</h2>
+                <p class="subtitle">Exelente para corridas</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod debitis id
+                    quia ad unde veniam dolor, et iure suscipit fugiat, at modi velit! Deleniti laborum porro molestias
+                    ut dolor?</p>
+            </div>
+            <!-- fim do card-details -->
+
+            <!-- container para o preço e o botao -->
+            <div class="prince-container">
+                <span class="prince">R$299,99</span>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
